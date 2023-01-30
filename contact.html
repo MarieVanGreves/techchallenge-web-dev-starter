@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Web Development Tech Challenge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="contact">
+    <nav class="navbar">
+      <h1 class="logo">Royal Kingdom of Colchis</h1>
+      <div class="nav-links">
+        <ul>
+          <li class="act"><a href="index.html">Home</a></li>
+          <li><a href="family.html">Royal Family</a></li>
+          <li><a href="assets.html">Royal Assets</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <h1
+          style="position: fixed; top: 320px; left: 58px; font-size: 50px;"
+          class="welcome"
+        >
+          Fill in the form below to contact the Royal Kingdom
+        </h1>
+      </div>
+    </nav>
+    <header></header>
+    <div class="containerform">
+      <form method="post" action="page.php" onsubmit="return verification(f);">
+        <center>
+          <label class="contactfield" for="name">Name</label><br />
+          <input
+            class="widthcontact"
+            type="text"
+            name="name"
+            placeholder="Your name"
+          /><br />
+
+          <label class="contactfield" for="email">Email</label><br />
+          <input
+            class="widthcontact"
+            type="text"
+            placeholder="Your email"
+          /><br />
+
+          <label class="contactfield" for="message">Message</label><br />
+          <textarea
+            class="widthcontact"
+            name="message"
+            id="message"
+            placeholder="Enter your message here"
+            style="height: 200px;"
+          ></textarea
+          ><br />
+
+          <input type="submit" value="Submit" />
+        </center>
+
+        <script src="script.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
